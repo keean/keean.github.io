@@ -37,7 +37,7 @@ ul {
 .title {
     display:block;
     font-size:2em;
-    /*font-weight:300;*/
+    font-weight:300;
     color:#000000;
 }
 
