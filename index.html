@@ -30,7 +30,81 @@
         </span>    
         <span class="post-block">
             <span class="post-title">Prolog Nanopass Compiler</span>
-            
+            <p>
+                So here's my first attempt at solving the grammar extension problem.
+                First define some primitive types:
+            </p>
+            <pre>
+nat(zero).
+nat(succ(X)) :-
+    nat(X).
+
+bool(true).
+bool(false).
+
+var(x).
+var(y).
+            </pre>
+            <p>
+                Define a language called "a":
+            </p>
+            <pre>
+def(language_a, use_a).
+grammar(L, var(X)) :-
+    def(L, use_a),
+    var(X).
+grammar(L, nat(X)) :-
+    def(L, use_a),
+    nat(X).
+grammar(L, bool(X)) :-
+    def(L, use_a),
+    bool(X).
+grammar(L, pair(X, Y)) :-
+    def(L, use_a),
+    grammar(L, X),
+    grammar(L, Y).
+grammar(L, app(Fun, Arg)) :-
+    def(L, use_a),
+    grammar(L, Fun),
+    grammar(L, Arg).
+grammar(L, lam(Var, Body)) :-
+    def(L, use_a),
+    var(Var),
+    grammar(L, Body).
+            </pre>
+            <p>
+                Define a language called "b" that extends language "a":
+            </p>
+            <pre>
+def(language_b, use_a).
+def(language_b, use_b).
+    grammar(L, let(Var, Body, Rhs)) :-
+    def(L, use_b),
+    var(Var),
+    grammar(L, Body),
+    grammar(L, Rhs).
+            </pre>
+            <p>
+                Is expression is valid in language "a":
+            </p>
+            <pre>
+:- grammar(language_a, lam(x, let(y, var(x), var(y)))).
+
+NP.
+            </pre>
+            <p>
+                Not accepted in language "a". Try "b":
+            </p>
+            <pre> 
+:- grammar(language_b, lam(x, let(y, var(x), var(y)))).
+
+yes.
+            </pre>
+            <p>
+                It is accepted in language "b". I think this is quite light
+                on boilerplate, and it would allow compact formal definitions
+                of intermediate languages.
+            </p>
         </span>    
     </body>
 </html>
