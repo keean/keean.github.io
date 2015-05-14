@@ -29,6 +29,7 @@ pre {
 }
 
 .header {
+    display:block;
     text-align:right;
     background-color:#002147;
     color:#ffffff;
