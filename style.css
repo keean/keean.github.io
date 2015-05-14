@@ -14,17 +14,21 @@ body {
     display:block;
     font-size:3em;
     font-weight:300;
-    text-align:center;
-    color:#5f7fff;
+    text-align:left;
+    color:#000000;
     margin-bottom:0.3em;
 }
 
-.subtitle {
+.post-block {
+    display:block;
+}
+
+.post-title {
     font-weight:400;
     font-size:1em;
     text-align:center;
     display:block;
     padding-bottom:2em;
-    color:#5f7fff
+    color:#0088cc
 }
 
