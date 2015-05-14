@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     vertical-align:top;
     margin:3em;
+    line-height:150%;
 }
 
 a {
