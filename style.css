@@ -20,12 +20,16 @@ a {
     font-weight:300;
     text-align:left;
     color:#000000;
-    margin-bottom:2em;
+    margin-bottom:1em;
 }
 
 .post-block {
     display:block;
-    background-color:#eeeeee;
+    background-color:#f7f7f7;
+    padding-top:0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    padding-bottom:1em;
 }
 
 .post-title {
