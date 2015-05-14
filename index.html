@@ -43,8 +43,7 @@ bool(true).
 bool(false).
 
 var(x).
-var(y).
-            </pre>
+var(y).</pre>
             <p>
                 Define a language called "a":
             </p>
@@ -70,8 +69,7 @@ grammar(L, app(Fun, Arg)) :-
 grammar(L, lam(Var, Body)) :-
     def(L, use_a),
     var(Var),
-    grammar(L, Body).
-            </pre>
+    grammar(L, Body).</pre>
             <p>
                 Define a language called "b" that extends language "a":
             </p>
@@ -82,24 +80,21 @@ def(language_b, use_b).
     def(L, use_b),
     var(Var),
     grammar(L, Body),
-    grammar(L, Rhs).
-            </pre>
+    grammar(L, Rhs).</pre>
             <p>
                 Is expression is valid in language "a":
             </p>
             <pre>
 :- grammar(language_a, lam(x, let(y, var(x), var(y)))).
 
-NP.
-            </pre>
+NP.</pre>
             <p>
                 Not accepted in language "a". Try "b":
             </p>
             <pre> 
 :- grammar(language_b, lam(x, let(y, var(x), var(y)))).
 
-yes.
-            </pre>
+yes.</pre>
             <p>
                 It is accepted in language "b". I think this is quite light
                 on boilerplate, and it would allow compact formal definitions
