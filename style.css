@@ -8,6 +8,7 @@ body {
     background-color:#ffffff;
     -webkit-font-smoothing: antialiased;
     vertical-align:top;
+    margin:2em;
 }
 
 a {
