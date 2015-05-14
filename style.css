@@ -16,7 +16,7 @@ body {
 a {
     color:#0088cc;
     text-decoration:none;
-    background-color:green;
+    background-color:yellow;
     text-align:left;
 }
 
@@ -68,5 +68,6 @@ ul {
 .small {
     display:block;
     font-size:66%;
+    background-color:cyan;
 }
 
