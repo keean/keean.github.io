@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color:#a7a1ae;
+    color:#000000;
     background-color:#ffffff;
     -webkit-font-smoothing: antialiased;
     vertical-align:top;
@@ -15,7 +15,7 @@ body {
     font-size:3em;
     font-weight:300;
     text-align:center;
-    color:#fff842;
+    color:#5f7fff;
     margin-bottom:0.3em;
 }
 
