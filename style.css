@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "./reset.css";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#a7a1ae;
+    background-color:#ffffff;
+    -webkit-font-smoothing: antialiased;
+    vertical-align:top;
+}
+
+.title {
+    display:block;
+    font-size:3em;
+    font-weight:300;
+    text-align:center;
+    color:#fff842;
+    margin-bottom:0.3em;
+}
+
+.subtitle {
+    font-weight:400;
+    font-size:1em;
+    text-align:center;
+    display:block;
+    padding-bottom:2em;
+    color:#5f7fff
+}
+
