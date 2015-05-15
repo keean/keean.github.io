@@ -40,9 +40,32 @@
         </span>    
 <!-- --------------------------------------------------------------------- -->
         <span class="post-block">
-            <span class="post-title">Prolog Nanopass Compiler</span>
+            <span class="post-title">Nanopass Compiler in Prolog</span>
+            <p> 
+                Any sufficienly advanced compiler contains a buggy implementation
+                of Prolog (borrowing from Greenspun's 10th rule). Implementing the
+                bootstrap compiler in Prolog seems like it could save some time and
+                encourage correctness. 
+            </p>
             <p>
-                So here's my first attempt at solving the grammar extension problem.
+                The following have all been tested using my own Prolog like logic
+                language <a href="https://github.com/keean/Clors">Clors</a> which 
+                has sound unification (post unification cycle check), a complete
+                search strategy (iterative-deepening) and complete inference (this
+                is work-in-progress).
+            </p>
+            <p>
+                The idea with a nanopass compiler is to cleanly separate each
+                transformation that happens on the way from source to target code
+                into passes and define intermediate languages that represent the
+                required functionality only. This means defining a lot of 
+                intermediate language grammars, so a way of defining and extending
+                language grammars with little boilerplate and good readability is
+                required. Nanopass compiler frameworks in Scheme facilitate this,
+                but these may not be necessary in a logic language which can express
+                these sort of problems natively.
+            <p>
+                Here is my first attempt at defining an extensible grammar in Prolog.
                 First define some primitive types:
             </p>
             <pre>
@@ -59,36 +82,36 @@ var(y).</pre>
                 Define a language called "a":
             </p>
             <pre>
-def(language_a, use_a).
+def(language_a, fragment_a).
 grammar(L, var(X)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     var(X).
 grammar(L, nat(X)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     nat(X).
 grammar(L, bool(X)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     bool(X).
 grammar(L, pair(X, Y)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     grammar(L, X),
     grammar(L, Y).
 grammar(L, app(Fun, Arg)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     grammar(L, Fun),
     grammar(L, Arg).
 grammar(L, lam(Var, Body)) :-
-    def(L, use_a),
+    def(L, fragment_a),
     var(Var),
     grammar(L, Body).</pre>
             <p>
                 Define a language called "b" that extends language "a":
             </p>
             <pre>
-def(language_b, use_a).
-def(language_b, use_b).
+def(language_b, fragment_a).
+def(language_b, fragment_b).
     grammar(L, let(Var, Body, Rhs)) :-
-    def(L, use_b),
+    def(L, fragment_b),
     var(Var),
     grammar(L, Body),
     grammar(L, Rhs).</pre>
