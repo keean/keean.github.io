@@ -43,6 +43,7 @@ ul {
 .header {
     display:block;
     margin-bottom:1em;
+    background-color:green;
 }
 
 .post-block {
@@ -61,7 +62,7 @@ ul {
 }
 
 .links {
-    display:inline;
+    display:block;
     font-size:80%;
     text-align:justify;
     width:100%;
