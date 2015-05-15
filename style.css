@@ -42,13 +42,13 @@ ul {
 
 .header {
     display:inline-block;
-    margin-bottom:2em;
+    margin-bottom:3em;
 }
 
 .post-block {
     display:block;
-    padding-top:0.5em;
-    padding-bottom:2em;
+    margin-top:0.5em;
+    margin-bottom:3em;
     border-top:1px solid #eee;
 }
 
