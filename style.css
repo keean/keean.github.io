@@ -41,7 +41,8 @@ ul {
 }
 
 .header {
-    /*display:block;*/
+    float:left;
+    display:block;
     margin-bottom:3em;
 }
 
