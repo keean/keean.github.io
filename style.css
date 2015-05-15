@@ -40,6 +40,8 @@ ul {
     font-size:2em;
     font-weight:300;
     color:#000000;
+    margin:0;
+    padding:0;
 }
 
 .header {
