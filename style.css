@@ -16,6 +16,8 @@ body {
 a {
     color:#0088cc;
     text-decoration:none;
+    margin:0px;
+    padding:0px;
 }
 
 p {
@@ -40,8 +42,8 @@ ul {
     font-size:2em;
     font-weight:300;
     color:#000000;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
 
 .header {
