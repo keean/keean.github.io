@@ -47,6 +47,7 @@ ul {
 }
 
 .post-block {
+    clear:both;
     display:block;
     padding-top:0.5em;
     margin-bottom:3em;
