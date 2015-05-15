@@ -38,7 +38,6 @@ ul {
     font-size:2em;
     font-weight:300;
     color:#000000;
-    background-color:cyan;
 }
 
 .header {
@@ -65,6 +64,5 @@ ul {
 .links {
     display:block;
     font-size:80%;
-    background-color:yellow;
 }
 
