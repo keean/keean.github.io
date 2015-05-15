@@ -38,12 +38,13 @@ ul {
     font-size:2em;
     font-weight:300;
     color:#000000;
+    background-color:cyan;
 }
 
 .header {
     display:block;
     margin-bottom:1em;
-    background-color:green;
+    background-color:magenta;
     width:0;
 }
 
