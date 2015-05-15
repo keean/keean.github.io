@@ -42,6 +42,7 @@ ul {
 }
 
 .header {
+    float:left;
     display:block;
     margin-bottom:1em;
     background-color:magenta;
