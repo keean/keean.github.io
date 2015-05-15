@@ -34,7 +34,7 @@ ul {
 }
 
 .title {
-    display:inline-block;
+    display:block;
     font-size:2em;
     font-weight:300;
     color:#000000;
@@ -63,7 +63,7 @@ ul {
 }
 
 .links {
-    display:inline-block;
+    display:block;
     font-size:80%;
     text-align:justify;
     background-color:yellow;
