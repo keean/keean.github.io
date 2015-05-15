@@ -34,6 +34,7 @@ ul {
 }
 
 .title {
+    float:left;
     display:block;
     font-size:2em;
     font-weight:300;
@@ -64,6 +65,7 @@ ul {
 }
 
 .links {
+    float:left;
     display:block;
     font-size:80%;
     text-align:justify;
