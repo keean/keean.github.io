@@ -66,6 +66,7 @@ ul {
     display:block;
     font-size:80%;
     text-align:justify;
+    text-justify:inter-word;
     background-color:yellow;
 }
 
