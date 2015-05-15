@@ -8,9 +8,6 @@ body {
     vertical-align:top;
     margin:3em;
     line-height:150%;
-    margin-left:0;
-    margin-right:0;
-    
 }
 
 a {
@@ -26,6 +23,7 @@ p {
 pre {
     padding:0.5em;
     font-size:80%;
+    background-color:#eee;
 }
 
 ul {
