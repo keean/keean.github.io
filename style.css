@@ -6,7 +6,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     vertical-align:top;
-    margin:3em;
     line-height:1.5em;
 }
 
@@ -53,6 +52,7 @@ ul {
     display:block;
     padding-top:0.5em;
     margin-bottom:3em;
+    margin-left:3em;
     border-top:1px solid #eee;
 }
 
