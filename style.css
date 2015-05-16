@@ -19,6 +19,7 @@ body {
  *
  * #0e574a
  * #1ba69a
+ * #32c292
  */
 
 a {
@@ -48,7 +49,8 @@ ul {
     display:block;
     font-size:2em;
     /*font-weight:300;*/
-    color:#1ba69a;
+    /*color:#1ba69a;*/
+    color:#32c292;
     margin-bottom:0.5em;
 }
 
@@ -63,7 +65,7 @@ ul {
     padding-bottom:3em;
     padding-left:1.5em;
     padding-top:1.5em;
-    background-color:#574c3d;
+    background-color:#5c5041;
 }
 
 .post-block {
