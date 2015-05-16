@@ -9,6 +9,11 @@ body {
     line-height:1.5em;
 }
 
+/*           dark    med     light
+ *      grey #5c5041 #948f81 #b4baa7
+ * turquoise #0b5c51 #0d8581 #189e9c
+ */
+
 a {
     /*color:#0088cc;*/
     /*color:#61d1b8;*/
@@ -50,8 +55,8 @@ ul {
 .header {
     display:block;
     padding-bottom:3em;
-    padding-left:3em;
-    padding-top:1em;
+    padding-left:1.5em;
+    padding-top:1.5em;
     /*background-color:#4e2e28;*/
     /*background-color:#9c8a77;*/
     /*background-color:#614c49;*/
