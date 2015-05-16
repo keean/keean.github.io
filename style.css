@@ -22,12 +22,6 @@ body {
  */
 
 a {
-    /*color:#0088cc;*/
-    /*color:#61d1b8;*/
-    /*color:#54758a;*/
-    /*color:#8ebfcc;*/
-    /*color:#b4d4d4;*/
-    /*color:#8cc2b4;*/
     color:#1ba69a;
     text-decoration:none;
 }
@@ -40,8 +34,6 @@ p {
 pre {
     display:block;
     padding:0.5em;
-    /*background-color:#d2d6d5;*/
-    /*background-color:#edd5ab;*/
     background-color:#f0f0f0;
 }
 
@@ -64,20 +56,17 @@ ul {
     padding-bottom:3em;
     padding-left:1.5em;
     padding-top:1.5em;
-    /*background-color:#4e2e28;*/
-    /*background-color:#9c8a77;*/
-    /*background-color:#614c49;*/
     background-color:#574c3d;
 }
 
 .post-block {
     clear:both;
     display:block;
-    padding-top:0.5em;
+    padding-top:3em;
     margin-bottom:3em;
     margin-left:3em;
     margin-right:3em;
-    border-top:1px solid #eee;
+    border-top:1px solid #bdbead;
 }
 
 .post-title {
@@ -85,7 +74,7 @@ ul {
     font-size:1.5em;
     display:block;
     padding-bottom:1em;
-    color:#000000;
+    color:#0e574a;
 }
 
 .links {
