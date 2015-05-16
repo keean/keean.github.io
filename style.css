@@ -11,7 +11,8 @@ body {
 
 a {
     /*color:#0088cc;*/
-    color:#61d1b8;
+    /*color:#61d1b8;*/
+    color:#54758a;
     text-decoration:none;
 }
 
@@ -45,7 +46,8 @@ ul {
     padding-bottom:3em;
     padding-left:3em;
     padding-top:1em;
-    background-color:#4e2e28;
+    /*background-color:#4e2e28;*/
+    background-color:#9c8a77;
     width:100%;
 }
 
