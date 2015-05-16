@@ -13,7 +13,8 @@ a {
     /*color:#0088cc;*/
     /*color:#61d1b8;*/
     /*color:#54758a;*/
-    color:#8ebfcc;
+    /*color:#8ebfcc;*/
+    color:#b4d4d4;
     text-decoration:none;
 }
 
@@ -25,7 +26,7 @@ p {
 pre {
     display:block;
     padding:0.5em;
-    background-color:#eee;
+    background-color:#d2d6d5;
 }
 
 ul {
