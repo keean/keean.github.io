@@ -48,7 +48,13 @@ ul {
     display:block;
     font-size:2em;
     font-weight:300;
-    color:#000000;
+    color:#1ba69a;
+}
+
+.subtitle {
+    color:#1ba69a;
+    display:block;
+    font-size:0.8em;
 }
 
 .header {
