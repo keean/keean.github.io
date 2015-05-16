@@ -50,7 +50,7 @@ ul {
     font-size:2em;
     /*font-weight:300;*/
     color:#1ba69a;
-    margin-bottom:0.5em;
+    margin-bottom:1.5em;
 }
 
 .subtitle {
@@ -61,7 +61,7 @@ ul {
 
 .header {
     display:block;
-    padding-bottom:3em;
+    padding-bottom:2em;
     padding-left:1.5em;
     padding-top:1.5em;
     background-color:#5c5041;
