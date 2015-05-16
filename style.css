@@ -14,7 +14,8 @@ a {
     /*color:#61d1b8;*/
     /*color:#54758a;*/
     /*color:#8ebfcc;*/
-    color:#b4d4d4;
+    /*color:#b4d4d4;*/
+    color:#8cc2b4
     text-decoration:none;
 }
 
@@ -26,7 +27,8 @@ p {
 pre {
     display:block;
     padding:0.5em;
-    background-color:#d2d6d5;
+    /*background-color:#d2d6d5;*/
+    background-color:#edd5ab;
 }
 
 ul {
@@ -49,7 +51,8 @@ ul {
     padding-left:3em;
     padding-top:1em;
     /*background-color:#4e2e28;*/
-    background-color:#9c8a77;
+    /*background-color:#9c8a77;*/
+    background-color:#614c49;
     width:100%;
 }
 
