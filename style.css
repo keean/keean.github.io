@@ -47,7 +47,7 @@ ul {
 .title {
     display:block;
     font-size:2em;
-    font-weight:300;
+    /*font-weight:300;*/
     color:#1ba69a;
     margin-bottom:0.5em;
 }
@@ -55,7 +55,7 @@ ul {
 .subtitle {
     color:#1ba69a;
     display:block;
-    font-size:0.8em;
+    /*font-size:0.8em;*/
 }
 
 .header {
