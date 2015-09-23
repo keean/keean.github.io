@@ -112,7 +112,7 @@ grammar(L, lam(Var, Body)) :-
             <pre>
 def(language_b, fragment_a).
 def(language_b, fragment_b).
-    grammar(L, let(Var, Body, Rhs)) :-
+grammar(L, let(Var, Body, Rhs)) :-
     def(L, fragment_b),
     var(Var),
     grammar(L, Body),
